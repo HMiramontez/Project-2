@@ -15,16 +15,20 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    // image_url: {
+    //   type: dataTypes.STRING,
+    //   allowNull: true,
+    // },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     ingredients: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
     },
     instruction: {
-        type: DataTyypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
     },
     date_created: {
@@ -49,4 +53,4 @@ Post.init(
   }
 );
 
-module.exports = Project;
+module.exports = Post;

@@ -35,11 +35,13 @@ User.init(
         len: [8],
       },
     },
-    faveKitchen: {
-        type: DataType.ARRAY,
-        allowNull: true,
-        // insert into an a tag and in handlebars loop throgh the array of kitchen ids into premade a tags
-    }
+    userPost_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'post',
+        key: 'id',
+      },
+    },
   },
   {
     hooks: {
